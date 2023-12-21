@@ -12,15 +12,18 @@
     />
     <title>Diogo Agostinho</title>
     <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+    <script type="module" src="js/scripts.js"></script>
   </head>
   <body>
     <div class="root">
-      <div class="left__container">
+      <div id="container_background" class="left__container">
         <div class="left__container-content">
           <div class="left__container-content_navbar">
             <div class="left__container-title">
               <div class="profile-picture">
-                <img class="profile-img" src="img/profile.jpg" />
+                <a href="https://github.com/diogoagostinho" target="_blank"
+                  ><img class="profile-img" src="img/profile.jpg"
+                /></a>
               </div>
               <div class="profile-name">
                 <div class="profile-name_name">
@@ -32,7 +35,11 @@
               </div>
             </div>
             <div class="left__container-switch">
-              <img class="holo__switch_img" src="img/holo_button.jpg" />
+              <img
+                src="img/holo_button.jpg"
+                id="holo"
+                class="holo__switch_img"
+              />
             </div>
           </div>
 
@@ -144,7 +151,9 @@
           <div class="left__container-separation">
             <h3 class="separator-text">Portfolio</h3>
           </div>
+
           <div class="left__container-block">
+            <p class="link_separator">JavaScript</p>
             <div class="block-link">
               <a
                 target="_blank"
@@ -155,6 +164,7 @@
                 <span class="left__container-text_link_span"> →</span>
               </a>
             </div>
+            <p class="link_separator">React</p>
             <div class="block-link">
               <a
                 target="_blank"
@@ -189,6 +199,7 @@
                 <span class="left__container-text_link_span"> →</span>
               </a>
             </div>
+            <p class="link_separator">Unity</p>
             <div class="block-link">
               <a
                 target="_blank"

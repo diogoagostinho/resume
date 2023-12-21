@@ -24,10 +24,12 @@ a:visited {
   background: #fff;
   float: left;
 
-  /* BACKGROUND
-  background: url(../img/holo.jpg);
+  transition: all 0.2s ease-in-out;
+}
+
+.holographic {
+  background: url(../img/holo2.jpg);
   background-size: cover;
-  */
 }
 
 .right__container {
@@ -69,7 +71,13 @@ a:visited {
 .profile-img {
   width: 100%;
   border-radius: 100%;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 40px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 3px 70px;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .profile-name {
@@ -136,7 +144,7 @@ hr {
 }
 
 .left__container-block {
-  margin: 6vh 0;
+  margin: 3vh 0 6vh 0;
 }
 
 .left__container-text_link_span,
@@ -272,4 +280,11 @@ li {
 .holo__switch_img:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.link_separator {
+  margin-top: 2vh;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3ch;
 }
