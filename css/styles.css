@@ -61,6 +61,8 @@ a:visited {
   justify-content: left;
   align-items: center;
 
+  gap: 4vh;
+
   margin-bottom: 0;
 }
 
@@ -80,8 +82,44 @@ a:visited {
   cursor: pointer;
 }
 
+@media screen and (max-width: 690px) {
+  .left__container-switch {
+    display: none;
+  }
+
+  .left__container-title {
+    flex-direction: column;
+    margin-bottom: 6vw;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  .profile-name {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .left__container-title {
+    margin: 6vh 0;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .root {
+    flex-direction: column;
+  }
+
+  .right__container {
+    max-width: 100%;
+  }
+
+  .left__container {
+    max-width: 100%;
+  }
+}
 .profile-name {
-  margin-left: 4vh;
 }
 
 .profile-name_name {
